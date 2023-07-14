@@ -345,7 +345,7 @@ input[type="checkbox"]:checked::before {
 }
 
 .dark-mode #job-details {
-  background-color: #19202D;
+  background-color: #19202d;
 }
 
 #job-details .info {
@@ -378,7 +378,7 @@ input[type="checkbox"]:checked::before {
 }
 
 .dark-mode #job-details .description {
-  color: #9DAEC2;
+  color: #9daec2;
   font-size: 16px;
 }
 
@@ -398,14 +398,12 @@ input[type="checkbox"]:checked::before {
   color: #6e8098;
 }
 
-
-
 #job-details .requirements ul li {
   color: #6e8098;
 }
 
 .dark-mode #job-details .requirements ul li {
-  color: #9DAEC2;
+  color: #9daec2;
 }
 
 #job-details .requirements ul li:before {
@@ -438,7 +436,7 @@ input[type="checkbox"]:checked::before {
 }
 
 .dark-mode #job-details .role ol li {
-  color: #9DAEC2;
+  color: #9daec2;
   counter-increment: my-counter;
 }
 
@@ -464,7 +462,7 @@ input[type="checkbox"]:checked::before {
 }
 
 .dark-mode #job-details-footer {
-  background-color: #19202D;
+  background-color: #19202d;
 }
 
 .border {
@@ -596,4 +594,22 @@ button:hover {
 
 .search-btn:hover {
   background-color: #939bf4;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    margin: 0px auto;
+    max-width: 00px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-content img {
+    width: 80px;
+    height: 40px;
+  }
 }
