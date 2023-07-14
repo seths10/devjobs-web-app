@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devjobs - Job Details</title>
+    <link
+      rel="shortcut icon"
+      href="assets/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="assets/desktop/bg-pattern-header.svg" alt="header" />
+    </header>
+
+    <div class="content">
+      <div class="header-content">
+        <img src="assets/desktop/logo.svg" alt="devjobs logo" />
+
+        <div class="flex toggle-align">
+          <img class="sun" src="assets/desktop/icon-sun.svg" alt="search" />
+          <div class="toggle">
+            <input aria-label="toggle" type="checkbox" id="toggle-mode" />
+            <label for="toggle-mode"></label>
+          </div>
+          <img class="moon" src="assets/desktop/icon-moon.svg" alt="search" />
+        </div>
+      </div>
+
+      <div id="header-details" class="detail-header flex"></div>
+
+      <div id="job-details"></div>
+
+      <div id="job-details-footer"></div>
+    </div>
+
+    <script src="src/details.js"></script>
+  </body>
+</html>
