@@ -16,56 +16,54 @@
       <img src="assets/desktop/bg-pattern-header.svg" alt="header" />
     </header>
 
-   <div class="content">
+    <div class="content">
+      <div class="header-content">
+        <img src="assets/desktop/logo.svg" alt="devjobs logo" />
 
-     <div class="header-content">
-       <img src="assets/desktop/logo.svg" alt="devjobs logo" />
-
-       
-       <div class="flex toggle-align">
-        <img class="sun" src="assets/desktop/icon-sun.svg" alt="search" />
-        <div class="toggle">
-          <input aria-label="toggle" type="checkbox" id="toggle-mode" />
-          <label for="toggle-mode"></label>
+        <div class="flex toggle-align">
+          <img class="sun" src="assets/desktop/icon-sun.svg" alt="search" />
+          <div class="toggle">
+            <input aria-label="toggle" type="checkbox" id="toggle-mode" />
+            <label for="toggle-mode"></label>
+          </div>
+          <img class="moon" src="assets/desktop/icon-moon.svg" alt="search" />
         </div>
-        <img class="moon" src="assets/desktop/icon-moon.svg" alt="search" />
-       </div>
-       
-     </div>
-    
-     <div class="filters flex">
-       <img src="assets/desktop/icon-search.svg" alt="search" />
-       <input
-         type="text"
-         id="search-input"
-         placeholder="Filter by title, company, or expertise..."
-       />
-    
-       <img class="ml-2"" src="assets/desktop/icon-location.svg" alt="location">
-       <input
-         type="text"
-         id="location-input"
-         placeholder="Filter by location..."
-       />
-    
-       <div class="flex mr-2 pt-23">
-         <input
-           aria-label="checkbox-full"
-           type="checkbox"
-           id="full-time-checkbox"
-         />
-         <p class="full-time-p">Full Time Only</p>
-       </div>
-    
-       <div>
-         <button class="search-btn">Search</button>
-       </div>
-     </div>
-    
-     <div class="jobs-list" id="jobs-list"></div>
-    
-     <div id="load-more"></div>
-   </div>
+      </div>
+
+      <div class="filters flex">
+        <img src="assets/desktop/icon-search.svg" alt="search" />
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Filter by title, company, or expertise..."
+        />
+
+        <img class="ml-2"" src="assets/desktop/icon-location.svg"
+        alt="location">
+        <input
+          type="text"
+          id="location-input"
+          placeholder="Filter by location..."
+        />
+
+        <div class="flex mr-2 pt-23">
+          <input
+            aria-label="checkbox-full"
+            type="checkbox"
+            id="full-time-checkbox"
+          />
+          <p class="full-time-p">Full Time Only</p>
+        </div>
+
+        <div>
+          <button class="search-btn">Search</button>
+        </div>
+      </div>
+
+      <div class="jobs-list" id="jobs-list"></div>
+
+      <div id="load-more"></div>
+    </div>
 
     <script src="src/script.js"></script>
   </body>

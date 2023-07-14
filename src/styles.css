@@ -18,7 +18,7 @@ body {
 }
 
 body.dark-mode {
-  background-color: #222;
+  background-color: #121721;
   color: #fff;
 }
 
@@ -102,6 +102,11 @@ input[type="text"] {
   color: #000;
 }
 
+.dark-mode input[type="text"] {
+  color: #fff;
+  background-color: #19202d;
+}
+
 .toggle input[type="checkbox"]:checked + label {
   background-color: #fff;
 }
@@ -137,6 +142,10 @@ main {
   padding: 0px 15px;
 }
 
+.dark-mode .filters {
+  background-color: #19202d;
+}
+
 .detail-header {
   z-index: 50;
   display: flex;
@@ -146,6 +155,10 @@ main {
   margin: 20px auto;
   max-width: 1200px;
   border-radius: 6px;
+}
+
+.dark-mode .detail-header {
+  background-color: #19202d;
 }
 
 .detail-header img {
@@ -163,13 +176,17 @@ main {
 }
 
 .detail-header .main-info h3 {
-  color: #19202D;
+  color: #19202d;
   font-size: 24px;
   font-weight: bold;
 }
 
+.dark-mode .detail-header .main-info h3 {
+  color: #fff;
+}
+
 .detail-header .main-info p {
-  color: #6E8098;
+  color: #6e8098;
   font-size: 16px;
 }
 
@@ -177,6 +194,10 @@ main {
   background-color: white;
   margin: 20px auto;
   padding: 0px 5px;
+}
+
+.dark-mode .filters img {
+  background-color: #19202d;
 }
 
 #search-input {
@@ -199,7 +220,22 @@ input[type="checkbox"] {
   appearance: none;
   width: 18px;
   height: 18px;
-  background-color: #f4f6f8;
+  background-color: #19202d;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s all ease-in-out;
+}
+
+.dark-mode input[type="checkbox"] {
+  margin-right: 10px;
+  margin-left: 10px;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background-color: #3f3f49;
   border-radius: 5px;
   display: inline-block;
   vertical-align: middle;
@@ -256,6 +292,10 @@ input[type="checkbox"]:checked::before {
   padding: 25px 25px 30px 25px;
 }
 
+.dark-mode .job-card {
+  background-color: #19202d;
+}
+
 .rounded {
   width: 2px;
   height: 2px;
@@ -290,6 +330,10 @@ input[type="checkbox"]:checked::before {
   margin-bottom: 35px;
 }
 
+.job-card a h3:hover {
+  color: #6e8098;
+}
+
 #job-details {
   z-index: 50;
   background-color: white;
@@ -297,7 +341,11 @@ input[type="checkbox"]:checked::before {
   max-width: 1200px;
   border-radius: 5px;
   padding: 30px 50px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
+}
+
+.dark-mode #job-details {
+  background-color: #19202D;
 }
 
 #job-details .info {
@@ -314,6 +362,10 @@ input[type="checkbox"]:checked::before {
   margin-bottom: 10px;
 }
 
+.dark-mode #job-details h1 {
+  color: #fff;
+}
+
 #job-details .mb-10 {
   color: #5964e0;
   font-weight: bold;
@@ -325,6 +377,11 @@ input[type="checkbox"]:checked::before {
   font-size: 16px;
 }
 
+.dark-mode #job-details .description {
+  color: #9DAEC2;
+  font-size: 16px;
+}
+
 #job-details .requirements h3 {
   color: #19202d;
   font-weight: bold;
@@ -332,13 +389,23 @@ input[type="checkbox"]:checked::before {
   margin: 30px 0px;
 }
 
+.dark-mode #job-details .requirements h3 {
+  color: #fff;
+}
+
 #job-details .requirements ul {
   list-style-type: none;
   color: #6e8098;
 }
 
+
+
 #job-details .requirements ul li {
   color: #6e8098;
+}
+
+.dark-mode #job-details .requirements ul li {
+  color: #9DAEC2;
 }
 
 #job-details .requirements ul li:before {
@@ -355,6 +422,10 @@ input[type="checkbox"]:checked::before {
   margin: 30px 0px;
 }
 
+.dark-mode #job-details .role h3 {
+  color: #fff;
+}
+
 #job-details .role ol {
   list-style-type: none;
   counter-reset: my-counter;
@@ -366,11 +437,16 @@ input[type="checkbox"]:checked::before {
   counter-increment: my-counter;
 }
 
+.dark-mode #job-details .role ol li {
+  color: #9DAEC2;
+  counter-increment: my-counter;
+}
+
 #job-details .role ol li::before {
   color: #5964e0;
   font-weight: bold;
   content: counter(my-counter);
-  margin-right: 1em;
+  margin-right: 2em;
   line-height: 2em;
 }
 
@@ -384,6 +460,11 @@ input[type="checkbox"]:checked::before {
   max-width: 1200px;
   border-radius: 6px;
   padding: 25px 20px;
+  margin-bottom: 50px;
+}
+
+.dark-mode #job-details-footer {
+  background-color: #19202D;
 }
 
 .border {
@@ -471,14 +552,30 @@ button {
   font-weight: bold;
   margin-right: 30px;
   border-radius: 5px;
-  background-color: #F4F6F8;
+  background-color: #f4f6f8;
   color: #5964e0;
   font-size: 16px;
   cursor: pointer;
 }
 
+.dark-mode .button2 {
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  margin-right: 30px;
+  border-radius: 5px;
+  background-color: #3d434e;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 .button2:hover {
-  background-color: #9DAEC2;
+  background-color: #9daec2;
+}
+
+.dark-mode .button2:hover {
+  background-color: #4d5157;
 }
 
 button:hover {

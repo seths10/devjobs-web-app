@@ -1,6 +1,26 @@
 const urlParams = new URLSearchParams(window.location.search);
 const jobId = urlParams.get("id");
 
+function toggleDarkMode() {
+  const body = document.body;
+  body.classList.toggle("dark-mode");
+  const isDarkMode = body.classList.contains("dark-mode");
+  localStorage.setItem("selectedMode", isDarkMode ? "dark" : "light");
+}
+
+function loadSelectedMode() {
+  const savedMode = localStorage.getItem("selectedMode");
+  if (savedMode === "dark") {
+    document.body.classList.add("dark-mode");
+  }
+}
+
+loadSelectedMode();
+
+document
+  .getElementById("toggle-mode")
+  .addEventListener("change", toggleDarkMode);
+
 fetch("data/data.json")
   .then((response) => response.json())
   .then((data) => {
